@@ -32,8 +32,14 @@ class ControlActivity : AppCompatActivity() {
 
         ConnectToDevice(this).execute()
 
-        control_led_on.setOnClickListener { sendCommand("a") }
-        control_led_off.setOnClickListener { sendCommand("b") }
+        control_led_on.setOnClickListener { sendCommand("1") }
+        control_led_off.setOnClickListener { sendCommand("2") }
+        control_led_on1.setOnClickListener { sendCommand("3")}
+        control_led_off1.setOnClickListener { sendCommand("4")}
+        control_led_on2.setOnClickListener { sendCommand("5")}
+        control_led_off2.setOnClickListener { sendCommand("6")}
+        control_led_on3.setOnClickListener { sendCommand("7")}
+        control_led_off3.setOnClickListener { sendCommand("8")}
         control_led_disconnect.setOnClickListener { disconnect() }
     }
 
